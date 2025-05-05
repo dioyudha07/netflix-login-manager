@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix Login Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Netflix Login Manager</h1>
+    
+    <div class="button-container">
+      <button id="exportBtn" class="btn">
+        <i class="icon-export"></i>
+        Export Netflix Session
+      </button>
+      
+      <input type="file" id="importInput" accept=".json" style="display: none;">
+      <button id="importBtn" class="btn">
+        <i class="icon-import"></i>
+        Import Netflix Session
+      </button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
