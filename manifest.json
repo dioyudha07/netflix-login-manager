@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Login Manager",
+  "version": "1.0",
+  "description": "Manage Netflix login sessions across different devices",
+  "permissions": [
+    "cookies",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://*.netflix.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
